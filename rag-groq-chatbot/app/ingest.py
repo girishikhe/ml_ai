@@ -39,7 +39,7 @@ class PDFIngestor:
         raw_text = read_pdf(file_path)
         parts = split_text(raw_text)
 
-        # create embeddings
+ 
         vectors = self.encoder.encode(parts, show_progress_bar=False, convert_to_numpy=True)
 
         # store metadata
